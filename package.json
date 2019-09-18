@@ -1,0 +1,29 @@
+{
+  "name": "rsschool-cv",
+  "version": "1.0.0",
+  "description": "https://Nikolay1984.github.io/rsschool-cv/cv",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "csscomb": "^4.3.0",
+    "htmlhint": "^0.11.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  },
+  "scripts": {
+    "lh": "htmlhint *.html",
+    "lc": "stylelint ./css/*.css",
+    "comb": "csscomb ./css",
+    "test": "npm run comb && npm run lh && npm run lc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolay1984/rsschool-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikolay1984/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/Nikolay1984/rsschool-cv#readme"
+}
