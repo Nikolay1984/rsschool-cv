@@ -1,5 +1,109 @@
-p {
-  position: fixed;
-
-  display: contents;
+* {
+/*	box-sizing: border-box;*/
+outline: 1px solid red;	
 }
+
+body{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+	
+}
+
+p {
+	font-family: "titillium_webextralight", sans-serif;
+	font-weight: 600;
+}
+
+.wrap {
+	background-color: white;
+	padding: 10px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+/*	flex-wrap: wrap;*/
+}
+h2,h1{
+	font-family: "gayathriregular", monospace;
+	width: 100%;
+	text-align: center;
+	margin: 15px 0; 
+}
+.section {
+/*	padding: 10px;*/
+}
+ul {
+	padding-left: 15px;
+}
+li {
+	padding-bottom: 5px;
+}
+.my-line {
+	width: 80%;
+	height: 1px;
+	border: 0;
+	background-color: black;
+/*	border-top: 0;*/
+/*	border-bottom: 1px solid black;*/
+/*	box-shadow: none;*/
+/*	margin: 0;*/
+}
+/*_____________________________________________________________________*/
+
+/*правая колонка*/
+.header {
+/*	max-width: 300px;*/
+	padding: 10px;
+	background-color: #dcddde;
+	width: 35%;
+/*	display: flex;*/
+/*	flex-direction: column;*/
+/*	align-content: space-between;*/
+/*	margin: 20px;*/
+}
+.figure{
+	margin-bottom: 0;
+/*	background-color: blue*/
+}
+.myfoto{
+	
+	width: 100%;
+	border-radius:50%;
+}
+.my-name{
+	
+/*	margin: 0 auto;*/
+}
+.my-name h1{
+	margin: 0;
+}
+.lineLeft {
+	width: 90%;
+}
+/*_____________________________________________________________________*/
+
+/*левая колонка*/
+.main{
+	
+	padding: 10px;
+	color: white;
+	background-color: #636466;
+	width: 70%;
+/*	margin: 20px;*/
+}
+@media screen and (max-width: 970px) {
+ .wrap {
+	flex-wrap: wrap;
+}
+	.header {
+		width: 100%;
+	}
+	.main {
+		width: 100%;
+	}
+}
+
+
+
+
+
