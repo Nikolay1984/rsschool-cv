@@ -1,109 +1,151 @@
-* {
-/*	box-sizing: border-box;*/
-outline: 1px solid red;	
-}
-
-body{
-	width: 100%;
-	height: 100%;
-	padding-top: 10px;
-	
-}
-
-p {
-	font-family: "titillium_webextralight", sans-serif;
-	font-weight: 600;
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
 }
 
 .wrap {
-	background-color: white;
-	padding: 10px;
-	max-width: 1024px;
-	margin: 0 auto;
-	display: flex;
-/*	flex-wrap: wrap;*/
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: white;
 }
-h2,h1{
-	font-family: "gayathriregular", monospace;
-	width: 100%;
-	text-align: center;
-	margin: 15px 0; 
+
+p {
+  font-weight: 600;
+  font-family: "titillium_webextralight", "Arial", sans-serif;
 }
-.section {
-/*	padding: 10px;*/
+
+h2,
+h1 {
+  width: 100%;
+  margin: 15px 0;
+
+  font-family: "gayathriregular", "Tahoma", monospace;
+  text-align: center;
 }
+
 ul {
-	padding-left: 15px;
+  padding-left: 15px;
 }
+
 li {
-	padding-bottom: 5px;
+  padding-bottom: 5px;
 }
-.my-line {
-	width: 80%;
-	height: 1px;
-	border: 0;
-	background-color: black;
-/*	border-top: 0;*/
-/*	border-bottom: 1px solid black;*/
-/*	box-shadow: none;*/
-/*	margin: 0;*/
-}
+
 /*_____________________________________________________________________*/
 
 /*правая колонка*/
 .header {
-/*	max-width: 300px;*/
-	padding: 10px;
-	background-color: #dcddde;
-	width: 35%;
-/*	display: flex;*/
-/*	flex-direction: column;*/
-/*	align-content: space-between;*/
-/*	margin: 20px;*/
+  width: 35%;
+  padding: 10px;
+
+  background-color: #dcddde;
+  border-radius: 60px 0 0 60px;
 }
-.figure{
-	margin-bottom: 0;
-/*	background-color: blue*/
+
+.figure {
+  margin-bottom: 0;
 }
-.myfoto{
-	
-	width: 100%;
-	border-radius:50%;
+
+.myfoto {
+  width: 100%;
+
+  border-radius: 50%;
 }
-.my-name{
-	
-/*	margin: 0 auto;*/
+
+.birthday p {
+  text-align: center;
 }
-.my-name h1{
-	margin: 0;
+
+.my-name h1 {
+  margin: 0;
 }
-.lineLeft {
-	width: 90%;
+
+.my-line {
+  width: 80%;
+  height: 1px;
+
+  background-color: black;
+  border: 0;
 }
+
 /*_____________________________________________________________________*/
 
 /*левая колонка*/
-.main{
-	
-	padding: 10px;
-	color: white;
-	background-color: #636466;
-	width: 70%;
-/*	margin: 20px;*/
+.main {
+  width: 70%;
+  padding: 10px;
+
+  color: white;
+
+  background-color: #636466;
+  border-radius: 0 60px 60px 0;
 }
+
+.skills ul {
+  margin-left: 60px;
+}
+
+.languages ul {
+  margin-left: 60px;
+}
+
+.code a {
+  display: block;
+
+  text-align: center;
+}
+
+.main .section p {
+  margin-left: 65px;
+}
+
+.main a {
+  color: cadetblue;
+}
+
+.main a:visited {
+  color: chocolate;
+}
+
+.main a:active {
+  color: tomato;
+}
+
+.my-line-right {
+  width: 80%;
+  height: 1px;
+
+  background-color: white;
+  border: 0;
+}
+
+/*___________________________________________________*/
+
+/*адаптивка*/
 @media screen and (max-width: 970px) {
- .wrap {
-	flex-wrap: wrap;
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .header {
+    width: 100%;
+
+    border-radius: 60px 60px 0 0;
+  }
+
+  .main {
+    width: 100%;
+
+    border-radius: 0 0 60px 60px;
+  }
+/*
+  .myfoto {
+   display: none;
+   width: 100%;
+  }
+*/
 }
-	.header {
-		width: 100%;
-	}
-	.main {
-		width: 100%;
-	}
-}
-
-
-
-
-
