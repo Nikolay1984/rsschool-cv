@@ -1,0 +1,151 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.wrap {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: white;
+}
+
+p {
+  font-weight: 600;
+  font-family: "titillium_webextralight", "Arial", sans-serif;
+}
+
+h2,
+h1 {
+  width: 100%;
+  margin: 15px 0;
+
+  font-family: "gayathriregular", "Tahoma", monospace;
+  text-align: center;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+/*_____________________________________________________________________*/
+
+/*правая колонка*/
+.header {
+  width: 35%;
+  padding: 10px;
+
+  background-color: #dcddde;
+  border-radius: 60px 0 0 60px;
+}
+
+.figure {
+  margin-bottom: 0;
+}
+
+.myfoto {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+.birthday p {
+  text-align: center;
+}
+
+.my-name h1 {
+  margin: 0;
+}
+
+.my-line {
+  width: 80%;
+  height: 1px;
+
+  background-color: black;
+  border: 0;
+}
+
+/*_____________________________________________________________________*/
+
+/*левая колонка*/
+.main {
+  width: 70%;
+  padding: 10px;
+
+  color: white;
+
+  background-color: #636466;
+  border-radius: 0 60px 60px 0;
+}
+
+.skills ul {
+  margin-left: 60px;
+}
+
+.languages ul {
+  margin-left: 60px;
+}
+
+.code a {
+  display: block;
+
+  text-align: center;
+}
+
+.main .section p {
+  margin-left: 65px;
+}
+
+.main a {
+  color: cadetblue;
+}
+
+.main a:visited {
+  color: chocolate;
+}
+
+.main a:active {
+  color: tomato;
+}
+
+.my-line-right {
+  width: 80%;
+  height: 1px;
+
+  background-color: white;
+  border: 0;
+}
+
+/*___________________________________________________*/
+
+/*адаптивка*/
+@media screen and (max-width: 970px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .header {
+    width: 100%;
+
+    border-radius: 60px 60px 0 0;
+  }
+
+  .main {
+    width: 100%;
+
+    border-radius: 0 0 60px 60px;
+  }
+/*
+  .myfoto {
+   display: none;
+   width: 100%;
+  }
+*/
+}
